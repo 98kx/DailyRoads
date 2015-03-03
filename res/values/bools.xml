@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="button_brightness_override">true</bool>
+    <bool name="use_32bpp_display">true</bool>
+</resources>

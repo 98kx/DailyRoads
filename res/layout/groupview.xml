@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/btn_btm"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="false"
+            android:paddingLeft="5dp"
+            android:src="@drawable/file_folder1" />
+
+        <TextView
+            android:id="@+id/groupview_titie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/mImageView"
+            android:paddingLeft="10dp"
+            android:text="1111"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/mImageView1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/moreoverflow"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/mImageView2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/moreoverflow"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- android:src="@drawable/moreoverflow" -->
+
+        </LinearLayout>
+        <!-- <ImageView -->
+        <!-- android:id="@+id/mImageView1" -->
+        <!-- android:layout_width="48dp" -->
+        <!-- android:layout_height="48dp" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_toRightOf="@+id/mImageView1" -->
+        <!-- android:onClick="more" -->
+        <!-- android:src="@drawable/d" /> -->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/setting_panel_bg_41" -->
+
+    <TextView
+        android:id="@+id/switch_to_video_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/setting_ic_video"
+        android:onClick="cameraToVideo"
+        android:text="@string/switch_to_video" />
+
+    <TextView
+        android:id="@+id/burst_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/file_text_w"
+        android:onClick="openfile"
+        android:text="@string/file" />
+
+    <TextView
+        android:id="@+id/burst_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/webfile"
+        android:onClick="webfile"
+        android:text="@string/webfile" />
+
+    <TextView
+        android:id="@+id/color_effect_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/setting_ic_setting"
+        android:onClick="app_setting"
+        android:text="@string/setting" />
+
+    <TextView
+        android:id="@+id/anti_shake_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:drawableTop="@drawable/exit"
+        android:onClick="exit"
+        android:text="@string/out" />
+
+</LinearLayout>

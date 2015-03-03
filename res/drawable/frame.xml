@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"><!-- 该属性指定动画是否只是播放一次，false为连续播放 -->
+    <item android:drawable="@drawable/anim2" android:duration="200"></item>
+    <item android:drawable="@drawable/anim1" android:duration="200"></item>
+</animation-list>

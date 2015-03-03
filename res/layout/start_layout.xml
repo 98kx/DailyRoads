@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/lLayoutFirst"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:text="@string/start_title"
+        android:textColor="@color/white"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@id/menuSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuTitle"
+        android:layout_margin="10.0dip"
+        android:text="@string/start_summary"
+        android:textSize="15.0sp" />
+
+    <LinearLayout
+        android:id="@id/lLayoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/buttonProceed"
+            style="@style/Button.Menu.Start"
+            android:drawableLeft="@android:drawable/ic_media_ff"
+            android:text="@string/button_proceed"
+            android:onClick="onProceed" />
+
+        <Button
+            android:id="@id/buttonOk"
+            style="@style/Button.Menu.Start"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:text="@android:string/ok"
+            android:onClick="buttonOk_next" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lLayoutMenu"
+        android:layout_below="@id/menuSummary"
+        android:layout_margin="5.0dip"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false" />
+
+    <EditText
+        android:id="@id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuSummary"
+        android:layout_margin="5.0dip"
+        android:inputType="phone"
+        android:visibility="gone" 
+        android:text="110"/>
+
+</RelativeLayout>

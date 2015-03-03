@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/setting_panel_bg_41" --> 
+
+    <TextView
+        android:id="@+id/switch_to_camera_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/setting_ic_camera"
+        android:gravity="center_horizontal"
+        android:onClick="videotoCamera"
+        android:text="@string/switch_to_camera" />
+
+    <TextView
+        android:id="@+id/setting_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/file_text_w"
+        android:gravity="center_horizontal"
+        android:onClick="openfile"
+        android:text="@string/file" />
+
+    <TextView
+        android:id="@+id/setting_webfile"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/webfile"
+        android:gravity="center_horizontal"
+        android:onClick="webfile"
+        android:text="@string/webfile" />
+
+    <TextView
+        android:id="@+id/setting_icon1"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/setting_ic_setting"
+        android:gravity="center_horizontal"
+        android:onClick="app_setting"
+        android:text="@string/setting" />
+
+    <TextView
+        android:id="@+id/color_effect_icon"
+        style="@style/SettingPanelItem"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/exit"
+        android:gravity="center_horizontal"
+        android:onClick="exit"
+        android:text="@string/out" />
+
+</LinearLayout>

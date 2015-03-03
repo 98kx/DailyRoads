@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="fill_parent"
+    _:layout_height="fill_parent" >
+
+    <ImageView
+        _:id="@+id/thumbnail"
+        _:layout_width="55.0dip"
+        _:layout_height="60.0dip"
+        _:layout_marginLeft="?android:expandableListPreferredItemPaddingLeft"
+        _:layout_marginRight="10.0dip"
+        _:gravity="left|center"
+        _:paddingBottom="1.0dip"
+        _:paddingTop="1.0dip" />
+
+    <TextView
+        _:id="@+id/file_title"
+        _:layout_width="fill_parent"
+        _:layout_height="27.0dip"
+        _:layout_marginTop="2.0dip"
+        _:layout_toRightOf="@id/thumbnail"
+        _:ellipsize="marquee"
+        _:gravity="left"
+        _:singleLine="true"
+        _:textSize="16.0sp"
+        _:textStyle="bold" />
+
+    <ImageView
+        _:id="@+id/gps"
+        _:layout_width="25.0dip"
+        _:layout_height="25.0dip"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="6.0dip"
+        _:layout_toRightOf="@id/thumbnail"
+        _:padding="1.0dip" />
+
+    <ImageView
+        _:id="@+id/upload"
+        _:layout_width="25.0dip"
+        _:layout_height="25.0dip"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="6.0dip"
+        _:layout_toRightOf="@id/gps"
+        _:padding="1.0dip" />
+
+    <ImageView
+        _:id="@+id/bookmark"
+        _:layout_width="25.0dip"
+        _:layout_height="25.0dip"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="6.0dip"
+        _:layout_toRightOf="@id/upload"
+        _:padding="1.0dip" />
+
+    <ImageView
+        _:id="@+id/location"
+        _:layout_width="25.0dip"
+        _:layout_height="25.0dip"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="6.0dip"
+        _:layout_toRightOf="@id/bookmark"
+        _:padding="1.0dip" />
+
+    <ImageView
+        _:id="@+id/descr"
+        _:layout_width="25.0dip"
+        _:layout_height="25.0dip"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="6.0dip"
+        _:layout_toRightOf="@id/location"
+        _:padding="1.0dip" />
+
+    <TextView
+        _:id="@+id/length"
+        _:layout_width="fill_parent"
+        _:layout_height="wrap_content"
+        _:layout_alignParentBottom="true"
+        _:layout_below="@id/file_title"
+        _:layout_marginRight="13.0dip"
+        _:layout_toRightOf="@id/bookmark"
+        _:gravity="bottom|right|center"
+        _:textSize="15.0sp" />
+
+</RelativeLayout>

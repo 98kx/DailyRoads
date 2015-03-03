@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="abs__config_prefDialogWidth">320.0dip</dimen>
+    <dimen name="abs__action_bar_default_height">48.0dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8.0dip</dimen>
+    <dimen name="abs__action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5.0dip</dimen>
+    <dimen name="abs__action_button_min_width">56.0dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_left">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8.0dip</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32.0dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160.0dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320.0dip</dimen>
+    <dimen name="text_size_small">14.0sp</dimen>
+    <dimen name="text_size_medium">18.0sp</dimen>
+    <dimen name="text_size_large">22.0sp</dimen>
+    <dimen name="text_size_xlarge">26.0sp</dimen>
+    <dimen name="app_widget_1_cell">40.0dip</dimen>
+    <dimen name="app_widget_2_cells">110.0dip</dimen>
+    <dimen name="app_widget_3_cells">180.0dip</dimen>
+    <dimen name="app_widget_4_cells">250.0dip</dimen>
+    <dimen name="colorstrip_height">6.0dip</dimen>
+    <dimen name="title_height">53.0dip</dimen>
+    <dimen name="now_playing_height">90.0dip</dimen>
+    <dimen name="map_small_width">120.0dip</dimen>
+    <dimen name="map_small_height">100.0dip</dimen>
+    <dimen name="map_large_width">240.0dip</dimen>
+    <dimen name="map_large_height">200.0dip</dimen>
+    <dimen name="speed_padding_right">0.775dip</dimen>
+    <dimen name="speed_padding_bottom">0.06500006dip</dimen>
+    <dimen name="gallery_title">50.0dip</dimen>
+    <dimen name="gallery_title_margin">46.669983dip</dimen>
+    <dimen name="gallery_more_popup_margin_bottom">46.0dip</dimen>
+    <dimen name="default_circle_indicator_radius">4.5dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

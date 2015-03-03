@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/title" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/preview" />
+
+        <ImageView
+            android:id="@+id/iFocusRect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            
+            android:src="@drawable/focus_focusing"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="0.0dip"
+        android:visibility="visible" >
+
+        <include layout="@layout/video_control" />
+    </RelativeLayout>
+
+    <include layout="@layout/video_top_screen_view" />
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffbdc0c4" >
+    </RelativeLayout>
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/time_popwindow" />
+
+</RelativeLayout>

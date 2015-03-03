@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_fen_textview"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:scaleType="center"
+    android:textAppearance="?android:attr/textAppearanceListItem"
+    android:textSize="20sp"
+      />

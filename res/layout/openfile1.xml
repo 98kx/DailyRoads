@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 文件选择界面的Layout -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@color/btn_btm2" >
+
+    <!-- <Button -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:background="@drawable/button" -->
+    <!-- android:text="选择存储路径" -->
+    <!-- android:textSize="20sp" /> -->
+
+    <TextView
+        android:id="@+id/xxx01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_btm3"
+        android:padding="13dp"
+        android:text="选择存储路径"
+        android:textColor="@color/orange"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/xxx02"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/btn_btm2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="saveFilePath"
+            android:background="@drawable/fbt"
+            android:text="确定" />
+
+        <TextView
+            android:id="@+id/filepath" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="这里是文件夹路径" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/openfile_listview_file_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

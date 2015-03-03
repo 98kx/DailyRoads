@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_bar"
+        android:layout_toLeftOf="@+id/title" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true" />
+            <ImageView
+        android:id="@+id/iFocusRect11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/focus_rect_unfocused"
+        android:visibility="visible" />
+
+<!--         <ImageView -->
+<!--             android:id="@+id/focus_rect_unfocused" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:src="@drawable/focus_rect_unfocused" -->
+<!--             android:visibility="gone" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/speed_value" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:paddingLeft="5.0dip" -->
+<!--             android:paddingRight="5.0dip" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ff000000" -->
+<!--             android:textSize="22.0sp" -->
+<!--             android:textStyle="bold" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/speed_unit" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/speed_value" -->
+<!--             android:paddingLeft="5.0dip" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ff000000" -->
+<!--             android:textSize="10.0sp" -->
+<!--             android:textStyle="bold" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/elev_text" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:padding="4.0dip" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ff000000" -->
+<!--             android:textStyle="bold" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/lat_text" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_alignParentLeft="true" -->
+<!--             android:padding="4.0dip" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ffffffff" -->
+<!--             android:textStyle="bold" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/lon_text" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:padding="4.0dip" -->
+<!--             android:text="" -->
+<!--             android:textColor="#ffffffff" -->
+<!--             android:textStyle="bold" /> -->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status_bar"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/surfaceView1"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="0.0dip" 
+        android:visibility="visible">
+ <include  layout="@layout/video_control"/>
+</RelativeLayout>
+<!--     <RelativeLayout -->
+<!--         android:id="@+id/title" -->
+<!--         android:layout_width="100.0dip" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_above="@+id/status_bar" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_marginRight="3.0dip" -->
+<!--         android:layout_marginTop="0.0dip"  -->
+<!--         android:visibility="gone"> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="100.0dip" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:background="@drawable/btn_black" -->
+<!--             android:orientation="vertical"  -->
+<!--             > -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/btnRecoder" -->
+<!--                 android:layout_width="100.0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/btn_black" -->
+<!--                 android:onClick="videostart" -->
+<!--                 android:text="录像" -->
+<!--                 android:textColor="#ffebebeb" -->
+<!--                 android:textSize="20.0sp" -->
+<!--                 android:textStyle="bold" -->
+<!--                  /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/photo_button" -->
+<!--                 android:layout_width="100.0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/btn_black" -->
+<!--                 android:onClick="takepic" -->
+<!--                 android:text="拍照" -->
+<!--                 android:textColor="#ffebebeb" -->
+<!--                 android:textSize="20.0sp" -->
+<!--                 android:textStyle="bold" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/files_button" -->
+<!--                 android:layout_width="100.0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/btn_black" -->
+<!--                 android:onClick="openfile" -->
+<!--                 android:text="文件" -->
+<!--                 android:textColor="#ffebebeb" -->
+<!--                 android:textSize="14.0sp" -->
+<!--                 android:textStyle="bold" /> -->
+
+<!--             <Button -->
+<!--                 android:id="@+id/exit_button" -->
+<!--                 android:layout_width="100.0dip" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_weight="1" -->
+<!--                 android:background="@drawable/btn_black" -->
+<!--                 android:onClick="app_setting" -->
+<!--                 android:text="设置" -->
+<!--                 android:textColor="#ffebebeb" -->
+<!--                 android:textSize="14.0sp" -->
+<!--                 android:textStyle="bold" /> -->
+<!--         </LinearLayout> -->
+<!--     </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffbdc0c4" >
+
+        <!--
+                  <Button
+            android:id="@+id/keep_on_off"
+            android:layout_width="25.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:padding="1.0dip"
+            android:scaleType="centerInside"
+            android:background="@drawable/btn_stop1"
+             android:layout_toRightOf="@+id/gps_text"
+			android:onClick="keep_on_off"/>
+         
+
+
+         
+             <TextView
+            android:id="@+id/gps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="2.0dip"
+            android:text="保留"
+            android:textColor="#ff000000"
+            android:textSize="13.0sp" />
+        -->
+
+        <TextView
+            android:id="@+id/totals_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5.0dip"
+            android:text="photos: 20, videos: 30"
+            android:textColor="#fffff000"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

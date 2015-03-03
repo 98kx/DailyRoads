@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="fill_parent"
+    _:layout_height="wrap_content"
+    _:orientation="vertical" >
+
+    <RelativeLayout
+        _:layout_width="fill_parent"
+        _:layout_height="fill_parent" >
+
+        <TextView
+            _:id="@+id/msg_text"
+            _:layout_width="fill_parent"
+            _:layout_height="wrap_content"
+            _:linksClickable="true"
+            _:padding="5.0dip"
+            _:text="" />
+
+        <TextView
+            _:id="@+id/msg_text_end"
+            _:layout_width="wrap_content"
+            _:layout_height="wrap_content"
+            _:layout_alignParentRight="true"
+            _:layout_below="@id/msg_text"
+            _:padding="10.0dip"
+            _:text="" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listviewsetting2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b0000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_btm3"
+        android:padding="13dp"
+        android:text="设置"
+        android:textColor="@color/orange"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/orange" />
+    <!-- <ListView -->
+    <!-- android:id="@+id/setting_listView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- /> -->
+
+
+    <!-- android:divider="@android:color/transparent" -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/setting_listView120"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:overScrollFooter="@android:color/transparent"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible" />
+<!--         让滚动条显示 -->
+<!--    android:scrollbarFadeDuration="0" -->
+<!--             android:scrollbarStyle="outsideOverlay" -->
+        <Button
+            android:id="@+id/set_ok_button"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="#000000"
+            android:onClick="onClick"
+            android:orientation="vertical"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

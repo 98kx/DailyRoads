@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="@drawable/abs__menu_dropdown_panel_holo_light">
+
+
+<!--     <TextView -->
+<!--         android:id="@+id/time_fen_textview" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:ellipsize="marquee" -->
+<!--         android:scaleType="center" -->
+<!--         android:singleLine="true" -->
+<!--         android:text="全部显示" /> -->
+
+<!--     <TextView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:scaleType="center" -->
+<!--         android:text="保管" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/time_miao_textview" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:scaleType="center" -->
+<!--         android:text="碰撞" /> -->
+
+<!--     <TextView -->
+<!--         android:id="@+id/time_miao_textview" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:scaleType="center" -->
+<!--         android:text="一般" /> -->
+
+    <ListView
+        android:id="@+id/popwindow_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#0e0e0e"
+        android:footerDividersEnabled="true"
+        >
+    </ListView>
+
+</LinearLayout>

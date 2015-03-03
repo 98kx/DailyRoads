@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="fill_parent"
+    _:layout_height="fill_parent" >
+
+    <ImageView
+        _:id="@+id/folder_icon"
+        _:layout_width="wrap_content"
+        _:layout_height="70.0dip"
+        _:gravity="left|center"
+        _:paddingBottom="1.0dip"
+        _:paddingLeft="?android:expandableListPreferredItemPaddingLeft"
+        _:paddingRight="10.0dip"
+        _:paddingTop="1.0dip" />
+
+    <TextView
+        _:id="@+id/folder_name"
+        _:layout_width="fill_parent"
+        _:layout_height="35.0dip"
+        _:layout_toRightOf="@id/folder_icon"
+        _:ellipsize="marquee"
+        _:gravity="left|center"
+        _:singleLine="true"
+        _:textSize="19.0sp"
+        _:textStyle="bold" />
+
+    <TextView
+        _:id="@+id/folder_info"
+        _:layout_width="fill_parent"
+        _:layout_height="30.0dip"
+        _:layout_below="@id/folder_name"
+        _:layout_toRightOf="@id/folder_icon"
+        _:gravity="left|center"
+        _:textSize="16.0sp" />
+
+</RelativeLayout>

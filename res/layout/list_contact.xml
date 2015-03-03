@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="fill_parent"
+    _:layout_height="fill_parent" >
+
+    <TextView
+        _:id="@+id/contact_name"
+        _:layout_width="fill_parent"
+        _:layout_height="35.0dip"
+        _:ellipsize="marquee"
+        _:gravity="left|center"
+        _:paddingLeft="10.0dip"
+        _:paddingTop="2.0dip"
+        _:singleLine="true"
+        _:textSize="19.0sp"
+        _:textStyle="bold" />
+
+    <TextView
+        _:id="@+id/contact_info"
+        _:layout_width="fill_parent"
+        _:layout_height="30.0dip"
+        _:layout_below="@id/contact_name"
+        _:gravity="left|center"
+        _:paddingLeft="10.0dip"
+        _:textSize="16.0sp" />
+
+    <ImageView
+        _:id="@+id/minus_button"
+        style="@style/MinusButton"
+        _:layout_width="70.0dip"
+        _:layout_height="75.0dip"
+        _:layout_alignParentRight="true"
+        _:gravity="center_vertical"
+        _:paddingTop="2.0dip" />
+
+</RelativeLayout>

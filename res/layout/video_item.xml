@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6.0dip" >
+
+    <ImageView
+        android:id="@+id/imageType"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="6.0dip"
+        android:background="@null"
+        android:contentDescription="xx"
+        android:scaleType="center"
+        android:src="@drawable/ic_check_off" />
+
+    <ImageView
+        android:id="@+id/imageStar"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_alignRight="@id/imageType"
+        android:layout_alignTop="@id/imageType"
+        android:background="@drawable/ic_star_on"
+        android:contentDescription="xx"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:layout_toRightOf="@id/imageType"
+        android:singleLine="true"
+        android:text="textTime"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/text_lan" />
+
+    <TextView
+        android:id="@+id/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textTime"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/textTime"
+        android:background="@drawable/bg_size"
+        android:padding="1.0dip"
+        android:singleLine="true"
+        android:text="(3.7k)"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resolution_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textTime"
+        android:layout_below="@id/textTime"
+        android:layout_marginRight="50.0dip"
+        android:ellipsize="marquee"
+        android:paddingTop="15dp"
+        android:singleLine="true"
+        android:text="resolution_ratio"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/load_ok"
+        android:contentDescription="xx"
+        android:visibility="gone" />
+
+</RelativeLayout> <!-- </LinearLayout> -->

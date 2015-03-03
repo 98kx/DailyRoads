@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:_="http://schemas.android.com/apk/res/android"
+    _:layout_width="fill_parent"
+    _:layout_height="fill_parent"
+    _:orientation="vertical" >
+
+    <TableLayout
+        _:id="@+id/table"
+        _:layout_width="fill_parent"
+        _:layout_height="fill_parent"
+        _:stretchColumns="*" >
+        <TableRow>
+
+            <TextView
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="2"
+                _:gravity="right"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="30.0dip"
+                _:text="@string/Size_label"
+                _:textSize="16.0sp" />
+
+            <TextView
+                _:id="@+id/size"
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="5"
+                _:gravity="left"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="3.0dip"
+                _:textSize="16.0sp"
+                _:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="2"
+                _:gravity="right"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="30.0dip"
+                _:text="@string/Resolution_label"
+                _:textSize="16.0sp" />
+
+            <TextView
+                _:id="@+id/res"
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="5"
+                _:gravity="left"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="3.0dip"
+                _:textSize="16.0sp"
+                _:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="2"
+                _:gravity="right"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="30.0dip"
+                _:text="@string/Format_label"
+                _:textSize="16.0sp" />
+
+            <TextView
+                _:id="@+id/format"
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="5"
+                _:gravity="left"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="3.0dip"
+                _:textSize="16.0sp"
+                _:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                _:id="@+id/duration_label"
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="2"
+                _:gravity="right"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="30.0dip"
+                _:text="@string/Duration_label"
+                _:textSize="16.0sp" />
+
+            <TextView
+                _:id="@+id/duration"
+                _:layout_width="wrap_content"
+                _:layout_height="wrap_content"
+                _:layout_weight="5"
+                _:gravity="left"
+                _:paddingLeft="3.0dip"
+                _:paddingRight="3.0dip"
+                _:textSize="16.0sp"
+                _:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

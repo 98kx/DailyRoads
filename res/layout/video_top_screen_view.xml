@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/flash_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|center"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/screen_view_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/flash_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_flash_auto"
+            android:drawablePadding="4.0dip" 
+            android:gravity="center"
+            android:lines="1"
+            android:onClick="onClickFlashmode"
+            android:text="自动"
+            android:textColor="#ffffff"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/flash_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:src="@drawable/screen_ic_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/flash_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_flash_on"
+            android:drawablePadding="4.0dip"
+            android:gravity="center" 
+            android:onClick="onClickFlashmode"
+            android:text="开启"
+            android:textColor="#ffffff"
+            android:textSize="14.0dip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/flash_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:src="@drawable/screen_ic_bg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/flash_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_flash_off"
+            android:drawablePadding="4.0dip"
+            android:gravity="center"
+            android:onClick="onClickFlashmode"
+            android:text="关闭"
+            android:textColor="#ffffff"
+            android:textSize="14.0dip"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</FrameLayout>
